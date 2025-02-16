@@ -1,0 +1,78 @@
+@use "../../../assets/styles/variables" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: $primary-color;
+    color: $white-default;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    &__navlist {
+        display: none;
+    }
+}
+
+.header__navlist-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: $primary-color;
+    border-top: 4px solid $white-default;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    transition: all .6s ease;
+
+    li a {
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $white-default;
+    }
+}
+
+.open-menu {
+    min-height: 60vh;
+}
+
+@media(min-width: 768px) {
+    .header {
+        padding: 1rem 2rem;
+
+        &__menu {
+            display: none
+        }
+
+        &__navlist {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+
+            li a {
+                text-decoration: none;
+                color: $white-default;
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .header {
+        padding: 1.2rem 2rem;
+    }
+}
