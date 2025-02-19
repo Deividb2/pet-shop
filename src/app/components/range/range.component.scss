@@ -1,0 +1,33 @@
+.range {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+
+    img {
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px) {
+    .range {
+        flex-direction: row;
+        justify-content: space-around;
+
+        img {
+            width: 7rem;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .range {
+        gap: 0;
+
+        img {
+            width: auto;
+            height: 2rem;
+        }
+    }
+}
