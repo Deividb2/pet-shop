@@ -1,0 +1,14 @@
+<section class="cards-container">
+    <h2 class="cards-container__title">Aprenda mais sobre seus pets agora mesmo</h2>
+
+    <div class="cards-container__cards">
+        <div *ngFor="let item of cards" class="cards-container__cards--card">
+            <img [src]="item.imgSrc" alt="Imagem do animal do card">
+            <div class="cards-container__cards--card__content">
+                <h3 class="cards-container__cards--card__content--title">{{ item.title }}</h3>
+                <h4 class="cards-container__cards--card__content--subtitle">{{ item.subtitle }}</h4>
+                <a href="#" class="cards-container__cards--card__content--button">Saiba mais <ng-icon name="matArrowRightAlt"></ng-icon></a>
+            </div>
+        </div>
+    </div>
+</section>
