@@ -1,0 +1,68 @@
+@use "../../../assets/styles/variables" as *;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+
+        &--title {
+            font-size: 1.5rem;
+            color: $secundary-color;
+        }
+
+        &--subtitle {
+            font-size: 2.2rem;
+            color: $primary-color;
+        }
+
+        &--text:last-of-type {
+            color: $primary-color !important;
+        }
+
+        &--button {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding: 1rem 2rem;
+            background-color: $accent-color;
+            color: $white-default;
+            align-self: start;
+            border-radius: 1rem;
+            text-decoration: none;
+
+            ng-icon {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .about {
+        flex-direction: row;
+        gap: 0;
+
+        &__img {
+            width: 50%;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .about {
+        width: 90%;
+        justify-self: center;
+    }
+}
