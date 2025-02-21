@@ -1,0 +1,18 @@
+<section class="products">
+    <div class="products__title">
+        <h2>Conheça nossos produtos promocionais</h2>
+    </div>
+    <div class="products__cards-container">
+        @for (item of products; track $index) {
+            <div class="products__cards-container--card">
+                <img [src]="item.imgSrc" alt="Imagem do produto"  class="products__cards-container--card__img">
+                <h3 class="products__cards-container--card__name">{{ item.name }}</h3>
+                <div class="products__cards-container--card__prices">
+                    <span>De {{ item.oldPrice }}</span>
+                    <span>Por {{ item.price }}</span>
+                </div>
+                <a href="#" class="products__cards-container--card__button">Comprar <ng-icon name="matArrowRightAlt"></ng-icon></a>
+            </div>
+        }
+    </div>
+</section>
