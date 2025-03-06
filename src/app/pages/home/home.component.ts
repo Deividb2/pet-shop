@@ -8,7 +8,6 @@ import { CardsComponent } from "../../components/cards/cards.component";
 import { AboutComponent } from "../../components/about/about.component";
 import { ProductsComponent } from "../../components/products/products.component";
 import { FooterComponent } from "../../components/footer/footer.component";
-import { ContactComponent } from "../../components/contact/contact.component";
 
 @Component({
   selector: 'app-home',
@@ -20,7 +19,6 @@ import { ContactComponent } from "../../components/contact/contact.component";
     CardsComponent,
     AboutComponent,
     ProductsComponent,
-    ContactComponent,
     FooterComponent
 ],
   template: `
@@ -30,8 +28,7 @@ import { ContactComponent } from "../../components/contact/contact.component";
     <app-cards id="services" />
     <app-about id="about" />
     <app-products id="products" />
-    <app-contact id="contact" />
-    <app-footer />
+    <app-footer id="contact" />
   `
 })
 
