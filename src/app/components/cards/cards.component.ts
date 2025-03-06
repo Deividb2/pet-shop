@@ -17,17 +17,17 @@ export class CardsComponent {
     {
       imgSrc: "../../../assets/images/little-cat.jpg",
       title: "Gatos",
-      subtitle: "Lorem ipsum maecenas porttitor at tincidunt elit euismod"
+      subtitle: "Cheios de charme e de fofura, distribuem carinho por onde passam"
     },
     {
       imgSrc: "../../../assets/images/cat-dog2.jpg",
       title: "Filhotes",
-      subtitle: "Lorem ipsum maecenas porttitor at tincidunt elit euismod"
+      subtitle: "Sempre prontos para brincar e se aventurar com seu filho"
     },
     {
       imgSrc: "../../../assets/images/dog1.jpg",
       title: "Cachorros",
-      subtitle: "Lorem ipsum maecenas porttitor at tincidunt elit euismod"
+      subtitle: "Cães carinhos e amigos fiéis, perfeitos para famílias que adoram diversão"
     }
   ]
 
