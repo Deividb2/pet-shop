@@ -1,0 +1,90 @@
+@use "../../../assets/styles/variables" as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        background-color: $bg-light;
+
+        h2 {
+            color: $primary-color;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        &--blocks {
+            display: flex;
+            flex-direction: column;
+            
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            form {
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    input[type="text"], input[type="email"] {
+                        outline: none;
+                        border: 1px solid $black-default;
+                        padding: .2rem .5rem;
+
+                        &:focus {
+                            border-color: $primary-color;
+                        }
+                    }
+                }
+
+                input[type="submit"] {
+                    margin-top: .5rem;
+                    padding: .5rem 1.5rem;
+                    font-weight: 600;
+                    border: none;
+                    border-radius: 1rem;
+                    background-color: $accent-color;
+                    color: $white-default;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../../../assets/images/backgrounds/bg.png") top / cover;
+        background-color: $primary-color;
+        height: 10vh;
+
+        span {
+            color: $white-default;
+            font-weight: 500;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .footer {
+        &__content {
+            justify-content: space-between;
+            align-items: center;
+            min-height: 60vh;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .footer {
+        &__content {
+            padding: 2rem;
+        }
+    }
+}

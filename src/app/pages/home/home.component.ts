@@ -27,10 +27,10 @@ import { ContactComponent } from "../../components/contact/contact.component";
     <app-header />
     <app-banner />
     <app-range />
-    <app-cards />
-    <app-about />
-    <app-products />
-    <app-contact />
+    <app-cards id="services" />
+    <app-about id="about" />
+    <app-products id="products" />
+    <app-contact id="contact" />
     <app-footer />
   `
 })
