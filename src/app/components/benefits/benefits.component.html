@@ -1,1 +1,18 @@
-<p>benefits works!</p>
+<section class="benefits">
+    <div class="benefits__headline">
+        <h2>Por que Escolher a Vivi Dog Pet?</h2>
+        <h3>Oferecemos um atendimento seguro, confortável e de qualidade para seu pet. Aqui, cada serviço é pensado com carinho e profissionalismo, garantindo o bem-estar e a felicidade do seu animal de estimação.</h3>
+    </div>
+
+    <div class="benefits__cards">
+        @for(card of benefitsData; track $index) {
+            <div class="benefits__cards--card">
+                <div class="benefits__cards--card__icon"><ng-icon [name]="card.iconName" /></div>
+                <div class="benefits__cards--card__text">
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.text }}</p>
+                </div>
+            </div>
+        }
+    </div>
+</section>

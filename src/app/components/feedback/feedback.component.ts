@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { matStar, matMarkUnreadChatAlt } from '@ng-icons/material-icons/baseline';
+import { matFormatQuoteOutline } from '@ng-icons/material-icons/outline';
 
 @Component({
   selector: 'app-feedback',
   standalone: true,
   imports: [CommonModule, NgIcon],
-  providers: [provideIcons({ matStar, matMarkUnreadChatAlt })],
+  providers: [provideIcons({ matStar, matMarkUnreadChatAlt, matFormatQuoteOutline })],
   templateUrl: './feedback.component.html',
   styleUrl: './feedback.component.scss'
 })
