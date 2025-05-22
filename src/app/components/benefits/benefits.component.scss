@@ -43,7 +43,7 @@
             gap: 1rem;
             text-align: center;
             padding: 3rem 1rem;
-            background-color: $clr-accent;
+            background-color: $clr-primary-a0;
             max-width: 20rem;
 
             &__icon {
@@ -51,6 +51,7 @@
                 font-size: 3rem;
                 padding: 1rem;
                 background-color: $clr-light-a10;
+                color: $clr-primary-a0;
                 border-radius: 100%;
             }
 
@@ -61,6 +62,10 @@
 
                 h3 {
                     font-size: 1.5rem;
+                }
+
+                p {
+                    color: $clr-light;
                 }
             }
         }

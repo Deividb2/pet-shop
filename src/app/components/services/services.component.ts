@@ -8,7 +8,7 @@ import { matContentCutOutline, matPetsOutline, matForumOutline } from '@ng-icons
   selector: 'app-services',
   standalone: true,
   imports: [CommonModule, NgIcon],
-  providers: [provideIcons({ matContentCutOutline, matPetsOutline, matForumOutline })],
+  providers: [provideIcons({ matWhatsapp, matContentCutOutline, matPetsOutline, matForumOutline })],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })

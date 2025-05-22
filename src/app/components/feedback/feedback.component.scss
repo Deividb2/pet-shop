@@ -1,3 +1,5 @@
+@use "../../../assets/styles/variables" as *;
+
 .feedback {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,7 @@
     &__title {
         font-size: 2rem;
         text-align: center;
+        color: $clr-primary-a0;
     }
 
     &__cards {
@@ -32,12 +35,13 @@
                 &--star {
                     display: flex;
                     font-size: 1.2rem;
-                    color: gold;
+                    color: $clr-primary-a0;
                 }
             }
 
             &__name {
                 font-size: 1.2rem;
+                color: $clr-secundary-a0;
             }
         }
     }
