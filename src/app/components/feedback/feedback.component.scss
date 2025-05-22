@@ -1,0 +1,56 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        &--card {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            max-width: 15rem;
+
+            &__head {
+                display: flex;
+                gap: 1rem;
+
+                &--cite {
+                    font-size: 2rem;
+                }
+
+                &--star {
+                    display: flex;
+                    font-size: 1.2rem;
+                    color: gold;
+                }
+            }
+
+            &__name {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .feedback {
+        min-height: 70vh;
+        justify-content: center;
+        gap: 4rem;
+
+        &__title {
+            font-size: 3rem;
+        }
+    }
+}

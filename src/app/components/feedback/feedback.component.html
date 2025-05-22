@@ -5,10 +5,12 @@
         @for(card of feedbacks; track $index) {
             <div class="feedback__cards--card">
                 <div class="feedback__cards--card__head">
-                    <div></div>
-                    @for(item of [].constructor(card.lengthStars); track $index){
-                        <div><ng-icon name="matStar" /></div>
-                    }
+                    <div class="feedback__cards--card__head--cite"><ng-icon name="matMarkUnreadChatAlt" /></div>
+                    <div class="feedback__cards--card__head--star">
+                        @for(item of [].constructor(card.lengthStars); track $index){
+                            <div><ng-icon name="matStar" /></div>
+                        }
+                    </div>
                 </div>
 
                 <p>{{ card.text }}</p>
