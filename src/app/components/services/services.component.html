@@ -1,0 +1,21 @@
+<section class="service">
+    <div class="service__headline">
+        <h2>Cuidamos do seu Pet com Carinho e Qualidade</h2>
+        <h3>Na Vivi Dog Pet, oferecemos serviços completos para garantir o bem-estar do seu melhor amigo. Desde a higiene até a saúde, tudo é pensado para proporcionar conforto e segurança.</h3>
+    </div>
+
+    <div class="service__cards">
+        @for(card of serviceDatas; track $index) {
+            <div class="service__cards--card">
+                <div class="service__cards--card__icon"><ng-icon [name]="card.iconName" /></div>
+                <div class="service__cards--card__title">
+                    <h3>{{ card.title }}</h3>
+                    <div></div>
+                </div>
+                <p>{{ card.text }}</p>
+            </div>
+        }
+    </div>
+
+    <a href="#" class="service__link"><ng-icon name="matWhatsapp" /> Agendar Horário</a>
+</section>

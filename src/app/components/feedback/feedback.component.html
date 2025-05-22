@@ -1,0 +1,20 @@
+<section class="feedback">
+    <h2 class="feedback__title">Testemunho</h2>
+
+    <div class="feedback__cards">
+        @for(card of feedbacks; track $index) {
+            <div class="feedback__cards--card">
+                <div class="feedback__cards--card__head">
+                    <div></div>
+                    @for(item of [].constructor(card.lengthStars); track $index){
+                        <div><ng-icon name="matStar" /></div>
+                    }
+                </div>
+
+                <p>{{ card.text }}</p>
+
+                <strong class="feedback__cards--card__name">{{ card.name }}</strong>
+            </div>
+        }
+    </div>
+</section>

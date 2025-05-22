@@ -8,6 +8,9 @@ import { CardsComponent } from "../../components/cards/cards.component";
 import { AboutComponent } from "../../components/about/about.component";
 import { ProductsComponent } from "../../components/products/products.component";
 import { FooterComponent } from "../../components/footer/footer.component";
+import { FeedbackComponent } from "../../components/feedback/feedback.component";
+import { ServicesComponent } from "../../components/services/services.component";
+import { BenefitsComponent } from "../../components/benefits/benefits.component";
 
 @Component({
   selector: 'app-home',
@@ -17,8 +20,11 @@ import { FooterComponent } from "../../components/footer/footer.component";
     BannerComponent,
     RangeComponent,
     CardsComponent,
+    ServicesComponent,
+    BenefitsComponent,
     AboutComponent,
     ProductsComponent,
+    FeedbackComponent,
     FooterComponent
 ],
   template: `
@@ -26,8 +32,11 @@ import { FooterComponent } from "../../components/footer/footer.component";
     <app-banner />
     <app-range />
     <app-cards id="services" />
+    <app-services />
+    <app-benefits />
     <app-about id="about" />
     <app-products id="products" />
+    <app-feedback />
     <app-footer id="contact" />
   `
 })
